@@ -117,65 +117,20 @@ export default function ArchitectsPage() {
          {/* Hero Section */}
          <section className="py-[64px] lg:py-[80px]">
             <div
-               className="
-         w-full
-         max-w-[815px]        
-         mx-auto
-         flex flex-col
-         items-center
-         gap-[32px]           
-         h-auto lg:h-[213px]  
-         text-center
-         "
-            >
+               className=" w-ful max-w-[815px] mx-aut flex flex-co items-cente gap-[32px] h-auto lg:h-[213px] text-center" >
                {/* ---------- HEADING ---------- */}
                <h1
-                  className="
-            font-switzer font-medium
-            text-[32px] sm:text-[42px] lg:text-[54px]   
-            leading-[100%]                               
-            tracking-[0%]
-            text-black
-            w-full
-            max-w-[815px]                                
-            h-auto lg:h-[71px]                        
-            mx-auto
-            text-center
-            "
-               >
+                  className="font-switzer font-medium text-[32px] sm:text-[42px] lg:text-[54px] leading-[100%] tracking-[0%] text-black w-full max-w-[815px] h-auto lg:h-[71px] mx-auto text-center">
                   Build Smarter with Top Architects
                </h1>
                {/* ---------- PARAGRAPH ---------- */}
                <p
-                  className="
-            font-switzer font-normal
-            text-[16px] sm:text-[18px]
-            leading-[27px]                            
-            tracking-[0%]
-            text-black
-            w-full
-            max-w-[577px]
-            mx-auto
-            "
-               >
+                  className="font-switzer font-normal text-[16px] sm:text-[18px] leading-[27px] tracking-[0%] text-black w-full max-w-[577px] mx-auto" >
                   A trusted platform connecting clients with top-rated architects and design professionals worldwide.
                </p>
                {/* ---------- BUTTON ---------- */}
                <button
-                  className="
-            bg-[#186AFF]                              
-            text-white
-            font-switzer font-medium
-            text-[18px]
-            leading-[100%]
-            px-[20px] py-[10px]                     
-            rounded-[6px]                             
-            hover:bg-[#155DE0]
-            transition
-            "
-               >
-                  Hire Architects
-               </button>
+                  className="bg-[#186AFF] text-white font-switzer font-medium text-[18px] leading-[100%] px-[20px] py-[10px] rounded-[6px] hover:bg-[#155DE0] transition ">Hire Architects</button>
             </div>
          </section>
          {/* GRID */}

@@ -18,18 +18,18 @@ export default function SignUpPage() {
       {/* Main Content */}
       <main className="max-w-xl mx-auto px-6 py-12">
                 {/* Header */}
-        <div className="text-center mb-[32px]">
-          <h2 className="text-[32px] font-[400] text-black leading-[100%] h-[42px]">
+        <div className="text-center mb-8">
+          <h2 className="text-[32px] font-normal text-black leading-[100%] h-[42px]">
             Choose your role
           </h2>
         </div>
 
         {/* Role Toggle */}
-        <div className="flex items-center p-[6px] rounded-[100px] mb-[64px] bg-[#F4F2F2] h-[60px] gap-[6px]">
+        <div className="flex items-center p-1.5 rounded-[100px] mb-16 bg-[#F4F2F2] h-15 gap-1.5">
           <button
             onClick={() => setUserRole('Client')}
             style={{ width: '273px', height: '48px' }}
-            className={`rounded-[50px] text-[18px] font-[500] leading-[100%] transition-all flex items-center justify-center ${
+            className={`rounded-[50px] text-[18px] font-medium leading-[100%] transition-all flex items-center justify-center ${
               userRole === 'Client' ? 'bg-white text-[#186AFF]' : 'text-[#00000099]'
             }`}
           >
@@ -38,7 +38,7 @@ export default function SignUpPage() {
           <button
             onClick={() => setUserRole('Consultant')}
             style={{ width: '273px', height: '48px' }}
-            className={`rounded-[50px] text-[18px] font-[500] leading-[100%] transition-all flex items-center justify-center ${
+            className={`rounded-[50px] text-[18px] font-medium leading-[100%] transition-all flex items-center justify-center ${
               userRole === 'Consultant' ? 'bg-white text-[#186AFF]' : 'text-[#00000099]'
             }`}
           >
@@ -46,7 +46,7 @@ export default function SignUpPage() {
           </button> 
         </div>
 
-        <hr className="border-[#757575] border-[1px] mb-[32px]" />
+        <hr className="border-[#757575] border mb-8" />
 
 
         {/* Sign Up Form */}
@@ -69,11 +69,11 @@ export default function SignUpPage() {
               </Link>
             </p>
           </div> */}
-          <div className="text-[302px] h-[21px] flex justify-center items-center">
+          <div className="text-[302px] h-5.25 flex justify-center items-center">
                <div className="text-[16px] font-[400] text-black text-center">
                  Already have an account?{' '}{' '}
                 
-                <Link href="/login" className="text-black  font-[400] text-blue-600">
+                <Link href="/login" className="text-black  font-normal text-blue-600">
                 Log In
               </Link>
               </div>
