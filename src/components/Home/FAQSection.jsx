@@ -37,86 +37,36 @@ const faqs = [
 
   return (
     <section className="bg-gray-50 py-[80px]">
-      <div className="max-w-[1440px] mx-auto px-4">
+      <div className="max-w-360 mx-auto px-4">
 
         {/* ---------- HEADING ---------- */}
         <div
-          className="
-            w-full max-w-[844px]
-            mx-auto
-            flex flex-col
-            gap-[12px]
-            text-center
-            mb-[48px]
-          "
+          className="w-full max-w-211 mx-auto flex flex-col gap-3 text-center mb-12"
         >
-          <h2
-            className="
-              font-switzer font-medium
-              text-[32px] sm:text-[42px] lg:text-[54px]
-              leading-[100%]
-              text-black
-            "
-          >
-            Got Questions? We&apos;ve Got Answer
-          </h2>
+          <h2 className="   font-switzer font-medium   text-[32px] sm:text-[42px] lg:text-[54px]   leading-[100%]   text-black "
+          > Got Questions? We&apos;ve Got Answer</h2>
 
-          <p
-            className="
-              font-switzer font-normal
-              text-[16px] sm:text-[18px]
-              leading-[27px]
-              text-black
-              max-w-[529px]
-              mx-auto
-            "
-          >
+          <p className=" font-switzer font-normal text-[16px] sm:text-[18px] leading-6.75 text-black max-w-132.25 mx-auto">
             Find quick answers to the most common questions about our platform
             and how we can help you build your dream project
           </p>
         </div>
 
         {/* ---------- FAQ LIST ---------- */}
-        <div className="w-full max-w-[758px] mx-auto flex flex-col gap-[24px]">
+        <div className="w-full max-w-189.5 mx-auto flex flex-col gap-6">
   {faqs.map((faq, index) => (
     <div
       key={index}
-      className="
-        w-full
-        bg-white
-        rounded-[8px]
-        p-[18px]
-        flex flex-col
-        gap-[12px]
-      "
-    >
+      className=" w-full bg-white rounded-lg p-4.5 flex flex-col gap-3">
       {/* QUESTION */}
       <button
         onClick={() => toggleFaq(index)}
-        className="
-          w-full
-          flex items-center
-          text-left
-        "
-      >
+        className=" w-full flex items-center text-left">
         {/* Figma row */}
-        <div
-          className="
-            w-full max-w-[722px]
-            h-[27px]
-            flex items-center
-            justify-between
+        <div className=" w-full max-w-180.5 h-6.75 flex items-center justify-between
           "
         >
-          <span
-            className="
-              font-switzer font-medium
-              text-[18px] sm:text-[20px]
-              leading-[27px]
-              text-black
-              max-w-[458px]
-            "
-          >
+          <span className=" font-switzer font-medium text-[18px] sm:text-[20px] leading-6.75 text-black max-w-114.5">
             {faq.question}
           </span>
 
@@ -131,17 +81,8 @@ const faqs = [
 
       {/* ANSWER */}
       {openFaq === index && (
-        <p
-          className="
-            font-switzer font-normal
-            text-[16px] sm:text-[18px]
-            leading-[27px]
-            text-[#00000099]
-            max-w-[722px]
-          "
-        >
-          {faq.answer}
-        </p>
+        <p className=" font-switzer font-normal text-[16px] sm:text-[18px] leading-6.75 text-[#00000099] max-w-180.5 ">
+          {faq.answer} </p>
       )}
     </div>
   ))}

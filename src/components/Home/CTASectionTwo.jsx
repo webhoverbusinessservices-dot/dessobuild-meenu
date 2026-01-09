@@ -6,49 +6,19 @@ export const CTASectionTwo = () => {
     <>
       <section className="bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12">
-          <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-3xl p-8 lg:p-20 relative overflow-hidden">
-            <div className="relative z-10 max-w-[587px] flex flex-col gap-[12px]">
+          <div className="bg-linear-to-r from-blue-600 to-blue-700 rounded-3xl p-8 lg:p-20 relative overflow-hidden">
+            <div className="relative z-10 max-w-146.75 flex flex-col gap-3">
   <h2
-    className="
-      font-switzer font-medium
-      text-[32px] sm:text-[42px] lg:text-[54px]
-      leading-[44px] sm:leading-[56px] lg:leading-[71px]
-      text-[#F6F6F6]
-    "
-  >
-    Have a Question?
-    <br />
-    We’re Here to Help
-  </h2>
+    className=" font-switzer font-medium text-[32px] sm:text-[42px] lg:text-[54px] leading-11 sm:leading-14 lg:leading-17.75text-[#F6F6F6]">
+    Have a Question?<br />We’re Here to Help</h2>
 
-  <p
-    className="
-      font-switzer font-normal
-      text-[14px] sm:text-[16px] lg:text-[18px]
-      leading-[24px] lg:leading-[27px]
-      text-[#F6F6F6]
-    "
-  >
+  <p className=" font-switzer font-normal text-[14px] sm:text-[16px] lg:text-[18px] leading-6 lg:leading-6.75 text-[#F6F6F6]">
     Reach out to our team — we’ll get back to you shortly.
   </p>
 
-  <div className="mt-[12px]">
-    <button
-      className="
-        bg-white
-        px-[20px] py-[10px]
-        rounded-[6px]
-        font-switzer font-medium
-        text-[18px]
-        leading-[24px]
-        text-[#186AFF]
-        hover:bg-[#F2F5FF]
-        transition
-      "
-    >
-      Contact us
-    </button>
-  </div>
+  <div className="mt-3">
+    <button className=" bg-white px-5 py-2.5 rounded-md font-switzer font-medium text-[18px]  leading-6  text-[#186AFF] hover:bg-[#F2F5FF]
+     transition"> Contact us </button> </div>
 </div>
 
             <div className="absolute right-25 top-25 opacity-20 lg:opacity-100">

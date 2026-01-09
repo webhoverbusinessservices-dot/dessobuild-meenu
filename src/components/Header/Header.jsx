@@ -71,10 +71,7 @@ export const Header = ({ loginBtn = true }) => {
                 Login
               </a>
             )}
-            <Link
-              href="/signup"
-              className=" w-[133px] h-[44px] bg-[#186AFF] rounded-[4px] px-5 py-2.5 flex items-center justify-center gap-[10px] opacity-100 hover:bg-[#0057E6] transition-all font-switzer 
-    font-medium text-[18px] leading-[100%] tracking-[0em] text-white">  Get Started</Link>
+            <Link href="/signup" className="w-33.25 h-11 bg-[#186AFF] rounded-sm px-5 py-2.5 flex items-center justify-center gap-2.5 opacity-100 hover:bg-[#0057E6] transition-all font-switzer font-medium text-[18px] leading-[100%] tracking-[0em] text-white">  Get Started</Link>
 
           </div>
 
@@ -89,18 +86,11 @@ export const Header = ({ loginBtn = true }) => {
 
         {/* MOBILE DROPDOWN MENU */}
         {mobileMenuOpen && (
-          <div className="lg:hidden mt-2 bg-[#F9F9F9] rounded-[16px] p-[20px] space-y-[16px] shadow">
+          <div className="lg:hidden mt-2 bg-[#F9F9F9] rounded-2xl p-5 space-y-4 shadow">
 
             <Link
               href="/architects"
-              className="
-        block 
-        font-switzer font-medium 
-        text-[18px] leading-[24px] tracking-[0em]
-        text-[#000000B8]
-        px-[12px] py-[10px]
-        rounded-[6px]
-        hover:bg-gray-100
+              className=" block  font-switzer font-medium  text-[18px] leading-6 tracking-[0em] text-[#000000B8] px-3 py-2.5 rounded-md hover:bg-gray-100
       "
             >
               Architects
@@ -108,63 +98,35 @@ export const Header = ({ loginBtn = true }) => {
 
             <Link
               href="/interior-designers"
-              className="block font-switzer font-medium text-[18px] leading-[24px] text-[#000000B8] px-[12px] py-[10px] rounded-[6px] hover:bg-gray-100"
+              className="block font-switzer font-medium text-[18px] leading-6 text-[#000000B8] px-3 py-2.5 rounded-md hover:bg-gray-100"
             >
               Interior Designers
             </Link>
 
             <Link
               href="/vastu"
-              className="block font-switzer font-medium text-[18px] leading-[24px] text-[#000000B8] px-[12px] py-[10px] rounded-[6px] hover:bg-gray-100">
+              className="block font-switzer font-medium text-[18px] leading-6 text-[#000000B8] px-3 py-2.5 rounded-md hover:bg-gray-100">
               Vastu Experts
             </Link>
 
             <Link
               href="/contact"
-              className="
-        block 
-        font-switzer font-medium 
-        text-[18px] leading-[24px]
-        text-[#000000B8]
-        px-[12px] py-[10px]
-        rounded-[6px]
-        hover:bg-gray-100
-      "
+              className=" block  font-switzer font-medium  text-[18px] leading-6 text-[#000000B8] px-3 py-2.5 rounded-md hover:bg-gray-100"
             >
               Contact us
             </Link>
 
-            <div className="pt-[12px] space-y-[12px]">
+            <div className="pt-3 space-y-3">
 
               {loginBtn && (
                 <a
                   href="/login"
-                  className="
-            block w-full text-center
-            font-switzer font-medium text-[18px] leading-[24px]
-            text-blue-600
-            border-2 border-blue-600
-            rounded-[6px]
-            py-[10px]
-          "
-                >
-                  Login
-                </a>
+                  className=" block w-full text-center font-switzer font-medium text-[18px] leading-6 text-blue-600 border-2 border-blue-600 rounded-md py-2.5"
+                >Login</a>
               )}
 
-              <Link
-                href="/signup"
-                className="
-          block w-full text-center
-          font-switzer font-medium text-[18px] leading-[24px]
-          text-white
-          bg-[#186AFF]
-          rounded-[6px]
-          py-[10px]
-        "
-              >
-                Get Started
-              </Link>
+              <Link href="/signup" className="block w-full text-center font-switzer font-medium text-[18px] leading-6 text-white bg-[#186AFF] rounded-md py-2.5">
+                Get Started</Link>
             </div>
 
           </div>
@@ -174,76 +136,30 @@ export const Header = ({ loginBtn = true }) => {
 
         {mobileMenuOpen && (
           <div className="lg:hidden bg-[#F9F9F9] border-t border-gray-200 mt-3 rounded-[16px] shadow p-[20px]">
-            <div className="space-y-[12px]">
+            <div className="space-y-3">
 
               <a
                 href="#architects"
-                className="
-          block font-switzer font-medium text-[18px] leading-[24px]
-          text-[#000000B8]
-          px-[12px] py-[10px]
-          bg-blue-50 text-blue-600 rounded-[8px]
-        "
-              >
-                Architects
-              </a>
+                className=" block font-switzer font-medium text-[18px] leading-6 text-[#000000B8] px-3 py-2.5 bg-blue-50 rounded-lg"
+              >Architects</a>
 
               <a
                 href="#designers"
-                className="
-          block font-switzer font-medium text-[18px] leading-[24px]
-          text-[#000000B8]
-          px-[12px] py-[10px]
-          hover:bg-gray-100 rounded-[8px]
-        "
-              >
-                Interior Designers
-              </a>
+                className="block font-switzer font-medium text-[18px] leading-6 text-[#000000B8] px-3 py-2.5 hover:bg-gray-100 rounded-lg">  Interior Designers</a>
 
-              <a
-                href="#vastu"
-                className="
-          block font-switzer font-medium text-[18px] leading-[24px]
-          text-[#000000B8]
-          px-[12px] py-[10px]
-          hover:bg-gray-100 rounded-[8px]
-        "
-              >
-                Vastu Experts
-              </a>
+              <a href="#vastu" className=" block font-switzer font-medium text-[18px] leading-6 text-[#000000B8] px-3 py-2.5 hover:bg-gray-100 rounded-lg"  >  Vastu Experts</a>
 
-              <a
-                href="#contact"
-                className="
-          block font-switzer font-medium text-[18px] leading-[24px]
-          text-[#000000B8]
-          px-[12px] py-[10px]
-          hover:bg-gray-100 rounded-[8px]
-        "
-              >
+              <a href="#contact" className=" block font-switzer font-medium text-[18px] leading-6 text-[#000000B8] px-3 py-2.5
+          hover:bg-gray-100 rounded-lg">
                 Contact us
               </a>
 
-              <div className="pt-[12px] space-y-[12px]">
-                <button
-                  className="
-            w-full text-center font-switzer font-medium text-[18px] leading-[24px]
-            text-blue-600 border-2 border-blue-600
-            rounded-[6px] py-[10px]
-          "
-                >
-                  Login
-                </button>
+              <div className="pt-3 space-y-3">
+                <button className="  w-full text-center font-switzer font-medium text-[18px] leading-6
+            text-blue-600 border-2 border-blue-600 rounded-md py-2.5"  > Login </button>
 
-                <button
-                  className="
-            w-full bg-[#186AFF] text-white
-            font-switzer font-medium text-[18px] leading-[24px]
-            rounded-[6px] py-[10px]
-          "
-                >
-                  Get Started
-                </button>
+                <button className=" w-full bg-[#186AFF] text-white font-switzer font-medium text-[18px] leading-6 rounded-md py-2.5"
+                >Get Started</button>
               </div>
 
             </div>

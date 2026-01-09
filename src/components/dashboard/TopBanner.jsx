@@ -5,12 +5,12 @@ function TopBanner() {
     <div className="flex flex-col gap-8">
 
       {/* BLUE STRIP */}
-      <div className="h-[58px] bg-[#186AFF] rounded-lg flex items-center justify-between px-4">
+      <div className="h-14.5 bg-[#186AFF] rounded-lg flex items-center justify-between px-4">
         <p className="text-white font-medium text-[20px]">
           Please update your Public Profile View
         </p>
 
-        <button className="h-[42px] px-4 bg-white rounded-lg text-[#186AFF] text-[14px] font-medium">
+        <button className="h-10.5 px-4 bg-white rounded-lg text-[#186AFF] text-[14px] font-medium">
           Update your Profile
         </button>
       </div>

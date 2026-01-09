@@ -1,5 +1,5 @@
 "use client";
-import ProfileDropdown from "./ProfileDropdown";
+import ProfileDropdown from "./DashboardHeaderDropdown.jsx";
 
 
 import { useState, useRef, useEffect } from "react";
@@ -29,7 +29,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="w-full h-17.25 bg-white border-b-2 border-black/25 flex items-center px-15 relative">
+    <header className="w-full h-17.25 bg-white border-b-2 border-black/25 flex items-center px-[60px] relative">
       <div className="w-full max-w-360 mx-auto flex items-center justify-between">
         
         {/* LEFT */}

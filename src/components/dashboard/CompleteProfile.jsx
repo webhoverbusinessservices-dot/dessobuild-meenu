@@ -11,7 +11,7 @@ export default function CompleteProfile() {
         <h3 className="text-[28px] font-medium">Complete Your Profile</h3>
 
         <div className="relative flex items-center gap-4">
-          <div className="w-[400px] h-2.5 rounded-full border border-black/20 bg-white" />
+          <div className="w-100 h-2.5 rounded-full border border-black/20 bg-white" />
           <span className="text-[20px] font-medium">
             20% Completed - Keep it up
           </span>

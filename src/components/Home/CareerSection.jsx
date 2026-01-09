@@ -103,58 +103,19 @@ export const CareerSection = () => {
 
     return (
         <>
-             <section className="px-4 sm:px-6 lg:px-8 py-[80px]">
+             <section className="px-4 sm:px-6 lg:px-8 py-20">
       {/* ---------- TEXT BLOCK ---------- */}
       <div
-        className="
-          w-full max-w-[703px]
-          mx-auto
-          flex flex-col items-center
-          gap-[32px]
-          text-center
-          mb-[48px]
-        "
-      >
-        <h2
-          className="
-            font-switzer font-medium
-            text-[32px] sm:text-[42px] lg:text-[54px]
-            leading-[100%]
-            text-[#000000]
-            max-w-[703px]
-          "
-        >
-          Unlock Your Career Potential
-        </h2>
+        className=" w-full max-w-175.75 mx-auto flex flex-col items-center gap-8 text-center mb-12 ">
+        <h2 className=" font-switzer font-medium text-[32px] sm:text-[42px] lg:text-[54px] leading-[100%] text-[#000000] max-w-175.75 ">
+          Unlock Your Career Potential</h2>
 
-        <p
-          className="
-            font-switzer font-normal
-            text-[16px] sm:text-[18px]
-            leading-[27px]
-            text-[#000000]
-            max-w-[480px]
-          "
-        >
-          Thousands of professionals have already found the right job with us
-          faster, easier, and with less stress
-        </p>
+        <p className="font-switzer font-normal text-[16px] sm:text-[18px] leading-6.75 text-[#000000] max-w-120"> Thousands of professionals have already found the right job with us
+          faster, easier, and with less stress</p>
 
-        <button
-          className="
-            bg-[#186AFF]
-            text-[#FFFFFF]
-            font-switzer font-medium
-            text-[18px]
-            leading-[100%]
-            px-[20px] py-[10px]
-            rounded-[4px]
-            hover:bg-[#155DE0]
-            transition-colors
-          "
-        >
-          Get Started
-        </button>
+        <button className=" bg-[#186AFF]text-[#FFFFFF] font-switzer font-medium text-[18px] leading-[100%] px-5 py-2.5 rounded-sm
+            hover:bg-[#155DE0] transition-colors
+          ">Get Started </button>
       </div>
                 <div className="relative max-w-full overflow-hidden">
 
