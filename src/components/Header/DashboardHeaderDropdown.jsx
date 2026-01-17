@@ -1,5 +1,4 @@
 "use client";
-
 import { forwardRef } from "react";
 import {
   User,
@@ -14,8 +13,12 @@ const ProfileDropdown = forwardRef(function ProfileDropdown(_, ref) {
   return (
     <div
       ref={ref}
-      className="absolute right-0 top-8 w-[256px] bg-white
-                 border border-black/10 rounded-xl p-2 shadow-lg z-50"
+      className="
+        absolute right-0 top-10
+        w-[256px] bg-white
+        border border-black/10
+        rounded-xl p-2 shadow-lg z-50
+      "
     >
       {/* USER INFO */}
       <div className="p-2">
@@ -48,7 +51,7 @@ const ProfileDropdown = forwardRef(function ProfileDropdown(_, ref) {
 
 export default ProfileDropdown;
 
-/* ---------------- HELPERS ---------------- */
+/* ---------- HELPERS ---------- */
 
 function MenuItem({ icon: Icon, title, subtitle, highlight }) {
   return (

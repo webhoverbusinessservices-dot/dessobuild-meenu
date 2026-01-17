@@ -115,24 +115,33 @@ export default function ArchitectsPage() {
          {/* Navigation */}
          <Header activePage="architects" />
          {/* Hero Section */}
-         <section className="py-[64px] lg:py-[80px]">
-            <div
-               className=" w-ful max-w-[815px] mx-aut flex flex-co items-cente gap-[32px] h-auto lg:h-[213px] text-center" >
-               {/* ---------- HEADING ---------- */}
-               <h1
-                  className="font-switzer font-medium text-[32px] sm:text-[42px] lg:text-[54px] leading-[100%] tracking-[0%] text-black w-full max-w-[815px] h-auto lg:h-[71px] mx-auto text-center">
-                  Build Smarter with Top Architects
-               </h1>
-               {/* ---------- PARAGRAPH ---------- */}
-               <p
-                  className="font-switzer font-normal text-[16px] sm:text-[18px] leading-[27px] tracking-[0%] text-black w-full max-w-[577px] mx-auto" >
-                  A trusted platform connecting clients with top-rated architects and design professionals worldwide.
-               </p>
-               {/* ---------- BUTTON ---------- */}
-               <button
-                  className="bg-[#186AFF] text-white font-switzer font-medium text-[18px] leading-[100%] px-[20px] py-[10px] rounded-[6px] hover:bg-[#155DE0] transition ">Hire Architects</button>
-            </div>
-         </section>
+         <section className="px-4 py-[64px] lg:py-[80px] bg-white">
+      {/* Frame 12: Main Container */}
+      <div className="mx-auto flex w-full max-w-[815px] flex-col items-center gap-[32px]">
+        
+        {/* Frame 15: Text Content Group */}
+        <div className="flex flex-col items-center gap-[12px] w-full">
+          {/* Heading */}
+          <h1 className="font-switzer text-center text-[36px] font-medium leading-[1.2] text-black sm:text-[48px] lg:text-[54px] lg:leading-[71px]">
+            Build Smarter with Top Architects
+          </h1>
+
+          {/* Subtext */}
+          <p className="font-switzer mx-auto max-w-[577px] text-center text-[16px] font-normal leading-[24px] text-black sm:text-[18px] sm:leading-[27px]">
+            A trusted platform connecting clients with top-rated architects and
+            design professionals worldwide.
+          </p>
+        </div>
+
+        {/* Button */}
+        <button 
+          className="flex h-[44px] w-fit items-center justify-center rounded-[6px] bg-[#186AFF] px-[20px] py-[10px] font-switzer text-[18px] font-medium leading-[24px] text-white transition-colors hover:bg-[#155DE0]"
+        >
+          Hire Architects
+        </button>
+      </div>
+    </section>
+
          {/* GRID */}
          {/* Architects Grid */}
          <section>

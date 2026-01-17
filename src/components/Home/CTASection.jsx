@@ -22,8 +22,7 @@ export const CTASection = () => {
 
 
 
-  <p className=" font-switzer font-normal text-[18px] leading-6.75 tracking-[0px]text-[#F6F6F6] max-w-146.75 h-auto lg:h-27 flex items-center      /* vertical align middle */
-    opacity-100"> Discover the latest trends, expert insights, and inspiring stories from
+  <p className=" font-switzer font-normal text-[18px] leading-6.75 tracking-[0px] text-[#F6F6F6] max-w-146.75 h-auto lg:h-27 flex items-center opacity-100"> Discover the latest trends, expert insights, and inspiring stories from
   Architects, Interior Designers, and Vastu Experts who are transforming
   modern design and redefining the way we imagine, create, and build better
   spaces together.</p>

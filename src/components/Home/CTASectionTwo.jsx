@@ -9,7 +9,7 @@ export const CTASectionTwo = () => {
           <div className="bg-linear-to-r from-blue-600 to-blue-700 rounded-3xl p-8 lg:p-20 relative overflow-hidden">
             <div className="relative z-10 max-w-146.75 flex flex-col gap-3">
   <h2
-    className=" font-switzer font-medium text-[32px] sm:text-[42px] lg:text-[54px] leading-11 sm:leading-14 lg:leading-17.75text-[#F6F6F6]">
+    className=" font-switzer font-medium text-[32px] sm:text-[42px] lg:text-[54px] leading-11 sm:leading-14 lg:leading-17.75 text-[#F6F6F6]">
     Have a Question?<br />We’re Here to Help</h2>
 
   <p className=" font-switzer font-normal text-[14px] sm:text-[16px] lg:text-[18px] leading-6 lg:leading-6.75 text-[#F6F6F6]">

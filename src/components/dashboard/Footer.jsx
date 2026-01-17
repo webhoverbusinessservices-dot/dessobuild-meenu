@@ -4,36 +4,25 @@ import React from "react";
 
  const Footer = () => {
   return (
-    <footer
-      className=" w-full bg-[#272932] border-t border-[#00000033] py-12 sm:py-14 text-white">
+    <footer className=" w-full bg-[#272932] border-t border-[#00000033] py-12 sm:py-14 text-white">
       <div className="max-w-300 mx-auto px-4">
 
         {/* ---------- TOP GRID ---------- */}
-        <div
-          className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12 ">
+        <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12 ">
           {/* ---------- LOCATION ---------- */}
           <div className="flex flex-col gap-6 max-w-55">
-            <h4
-              className="
-                font-switzer font-medium
-                text-[14px]
-                leading-[100%]
-                text-white
-              "
-            >
+            <h4 className=" font-switzer font-medium text-[14px] leading-[100%] text-white" >
               Location
             </h4>
 
             <ul className="flex flex-col gap-2">
-              <li
-                className=" font-switzer font-normal text-[14px] leading-[100%] text-white ">
+              <li className=" font-switzer font-normal text-[14px] leading-[100%] text-white ">
                 E-520A, 3rd Floor,<br />
                 Sector 7, Dwarka,<br />
                 New Delhi - 110075, India
               </li>
 
-              <li
-                className=" font-switzer font-normal text-[14px] leading-[100%] text-white">
+              <li className=" font-switzer font-normal text-[14px] leading-[100%] text-white">
                 info@dessobuild@gmail.com
               </li>
             </ul>
@@ -106,19 +95,11 @@ import React from "react";
           <div
             className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <span
-              className=" font-switzer font-semibold text-[28px] leading-[100%] tracking-[0] text-white w-[147px] h-[37px] flex items-center
-  "
-            >
-              DessoBuild
-            </span>
+              className=" font-switzer font-semibold text-[28px] leading-[100%] tracking-[0] text-white w-[147px] h-[37px] flex items-center">
+              DessoBuild</span>
 
 
-            <span
-              className=" font-switzer font-normal text-[16px] leading-[100%] tracking-[0] text-white w-69.75 h-5.25 flex items-center
-  "
-            >
-              © 2025 DessoBuild. All rights reserved.
-            </span>
+            <span className=" font-switzer font-normal text-[16px] leading-[100%] tracking-[0] text-white w-69.75 h-5.25 flex items-center " > © 2025 DessoBuild. All rights reserved.</span>
 
           </div>
         </div>

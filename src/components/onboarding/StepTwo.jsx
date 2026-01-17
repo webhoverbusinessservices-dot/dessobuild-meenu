@@ -26,30 +26,30 @@ const StepTwo = ({ currentStep, setCurrentStep }) => {
         rounded-3xl
         border border-[rgba(24,106,255,0.16)]
         shadow-[0px_186px_74px_rgba(0,0,0,0.01),0px_105px_63px_rgba(0,0,0,0.04),0px_46px_46px_rgba(0,0,0,0.07),0px_12px_26px_rgba(0,0,0,0.08)]
-        p-10
+        p-6 sm:p-8 lg:p-10
         w-full
       "
     >
-      {/* FRAME 132 — inner width */}
-      <div className="max-w-[680px] mx-auto flex flex-col gap-8">
+      {/* INNER WIDTH */}
+      <div className="max-w-[680px] mx-auto flex flex-col gap-6 sm:gap-8">
 
         {/* STEP */}
-        <p className="font-switzer text-[16px] leading-[27px] font-medium text-[#186AFF]">
+        <p className="font-switzer text-[14px] sm:text-[16px] leading-[27px] font-medium text-[#186AFF]">
           STEP {currentStep} OF 5
         </p>
 
         {/* TITLE */}
         <div className="flex flex-col gap-2">
-          <h2 className="font-switzer font-medium text-[32px] leading-[27px] text-black">
+          <h2 className="font-switzer font-medium text-[24px] sm:text-[28px] lg:text-[32px] leading-[27px] text-black">
             Specialization & Language
           </h2>
-          <p className="font-switzer text-[16px] leading-[24px] text-black/60">
+          <p className="font-switzer text-[14px] sm:text-[16px] leading-[22px] sm:leading-[24px] text-black/60">
             Choose what you’re best at and the languages you can confidently work in.
           </p>
         </div>
 
         {/* FORM CONTENT */}
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-6 sm:gap-8">
 
           {/* SPECIALIZATION */}
           <Field label="Select your specialization *">
@@ -83,53 +83,52 @@ const StepTwo = ({ currentStep, setCurrentStep }) => {
         </div>
 
         {/* ACTIONS */}
-<div className="flex items-center justify-between pt-8 border-t border-black/10">
-  
-  {/* LEFT GROUP: Back + Skip */}
-  <div className="flex items-center gap-6">
-    <button
-      onClick={handleBack}
-      className="
-        h-11
-        px-5
-        rounded-xl
-        border border-black/20
-        flex items-center gap-2
-        text-[18px]
-        font-medium
-        text-black/60
-        hover:bg-black/[0.02]
-      "
-    >
-      ← Back
-    </button>
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pt-6 sm:pt-8 border-t border-black/10">
+          
+          {/* LEFT */}
+          <div className="flex items-center gap-4 sm:gap-6">
+            <button
+              onClick={handleBack}
+              className="
+                h-11
+                px-5
+                rounded-xl
+                border border-black/20
+                flex items-center gap-2
+                text-[16px] sm:text-[18px]
+                font-medium
+                text-black/60
+                hover:bg-black/[0.02]
+              "
+            >
+              ← Back
+            </button>
 
-    <button
-      type="button"
-      className="text-[18px] font-medium text-black/60 hover:text-black"
-    >
-      Skip for now
-    </button>
-  </div>
+            <button
+              type="button"
+              className="text-[16px] sm:text-[18px] font-medium text-black/60 hover:text-black"
+            >
+              Skip for now
+            </button>
+          </div>
 
-  {/* RIGHT: Save */}
-  <button
-    onClick={handleNext}
-    className="
-      h-11
-      px-6
-      rounded-xl
-      bg-[#186AFF]
-      text-white
-      text-[18px]
-      font-medium
-      hover:bg-blue-700
-    "
-  >
-    Save & Continue
-  </button>
-</div>
-
+          {/* RIGHT */}
+          <button
+            onClick={handleNext}
+            className="
+              h-11
+              px-6
+              rounded-xl
+              bg-[#186AFF]
+              text-white
+              text-[16px] sm:text-[18px]
+              font-medium
+              hover:bg-blue-700
+            "
+          >
+            Save & Continue
+          </button>
+        </div>
       </div>
     </section>
   );
@@ -140,8 +139,8 @@ export default StepTwo;
 /* ----------------- COMPONENTS ----------------- */
 
 const Field = ({ label, children }) => (
-  <div className="flex flex-col gap-4">
-    <label className="font-switzer text-[16px] leading-[21px] text-black">
+  <div className="flex flex-col gap-3 sm:gap-4">
+    <label className="font-switzer text-[14px] sm:text-[16px] leading-[21px] text-black">
       {label}
     </label>
     {children}
@@ -150,9 +149,16 @@ const Field = ({ label, children }) => (
 
 const ChipInput = ({ selected, options, onToggle, helper }) => (
   <>
-    {/* Input box */}
-    <div className="min-h-[40px] border border-black/25 rounded-lg px-2
-                    flex items-center flex-wrap gap-2">
+    {/* Selected */}
+    <div
+      className="
+        min-h-[40px]
+        border border-black/25
+        rounded-lg
+        px-2
+        flex items-center flex-wrap gap-2
+      "
+    >
       {selected.map((item) => (
         <Chip key={item} active onClick={() => onToggle(item)}>
           {item}
@@ -161,13 +167,13 @@ const ChipInput = ({ selected, options, onToggle, helper }) => (
     </div>
 
     {helper && (
-      <p className="text-[14px] leading-[18px] text-black/50">
+      <p className="text-[12px] sm:text-[14px] leading-[18px] text-black/50">
         {helper}
       </p>
     )}
 
     {/* Options */}
-    <div className="flex flex-wrap gap-3">
+    <div className="flex flex-wrap gap-2 sm:gap-3">
       {options.map(
         (opt) =>
           !selected.includes(opt) && (
@@ -182,12 +188,19 @@ const ChipInput = ({ selected, options, onToggle, helper }) => (
 
 const ChipGroup = ({ selected, options, onSelect }) => (
   <>
-    <div className="min-h-[40px] border border-black/25 rounded-lg px-2
-                    flex items-center">
+    <div
+      className="
+        min-h-[40px]
+        border border-black/25
+        rounded-lg
+        px-2
+        flex items-center
+      "
+    >
       <Chip active>{selected}</Chip>
     </div>
 
-    <div className="flex flex-wrap gap-3">
+    <div className="flex flex-wrap gap-2 sm:gap-3">
       {options.map(
         (opt) =>
           opt !== selected && (
@@ -205,13 +218,15 @@ const Chip = ({ children, active, onClick }) => (
     onClick={onClick}
     className={`
       flex items-center gap-2
-      px-4 py-1.5
+      px-3 sm:px-4 py-1.5
       rounded-full
-      text-[16px] leading-[21px]
+      text-[14px] sm:text-[16px] leading-[21px]
       border
-      ${active
-        ? "border-black/25 bg-[#F9F9F9]"
-        : "border-black/25 bg-[#F9F9F9] hover:bg-black/5"}
+      ${
+        active
+          ? "border-black/25 bg-[#F9F9F9]"
+          : "border-black/25 bg-[#F9F9F9] hover:bg-black/5"
+      }
     `}
   >
     {children}

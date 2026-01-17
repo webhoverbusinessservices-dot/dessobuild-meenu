@@ -63,116 +63,125 @@ export default function ContactUsPage() {
       <Header activePage="contact" />
       {/* Hero Section */}
       <section className="bg-white py-[64px] lg:py-[80px]">
-        <div className="w-full max-w-19.75 mx-auto px-6 lg:px-0 flex flex-col gap-3 text-center">
-          <h1 className="font-switzer font-medium text-[32px] sm:text-[42px] lg:text-[54px] leading-[100%] tracking-[0%] text-black w-full max-w-119.25 mx-auto">
-            Get in touch with us
-          </h1>
+  <div className=" w-full max-w-[479px] mx-auto px-4 lg:px-0 flex flex-col items-center gap-[12px] text-center">
+    {/* ---------- HEADING ---------- */}
+    <h1 className=" font-switzer font-medium text-[32px] sm:text-[42px] lg:text-[54px] leading-[40px] sm:leading-[52px] lg:leading-[71px] text-black " >
+      Get in touch with us
+    </h1>
 
-          <p className="font-switzer font-normal text-[16px] sm:text-[18px] leading-[27px] text-black opacity-80 w-full max-w-119.75 mx-auto">
-            Fill out the form below or schedule a meeting with us at your
-            convenience.
-          </p>
-        </div>
-      </section>
+    {/* ---------- PARAGRAPH ---------- */}
+    <p className=" font-switzer font-normal text-[16px] sm:text-[18px] leading-[24px] sm:leading-[27px] text-black opacity-80" >
+      Fill out the form below or schedule a meeting with us at your convenience.
+    </p>
+  </div>
+</section>
+
 
       {/* Contact Form Section */}
       <section className="max-w-300 mx-auto px-6 lg:px-0 py-12">
-        <div
-          className="grid grid-cols-1 lg:grid-cols-2 gap-20
-    "
-        >
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
           {/* ================= FORM ================= */}
-          <div className="flex flex-col gap-6">
-            {/* Name Row */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {/* ROW 1 */}
-              <div className="w-140 h-68 flex gap-4">
-                {/* First name */}
-                <div className="w-68 h-16.75 flex flex-col gap-1.5">
-                  <label className="font-switzer font-normal text-[16px] leading-[100%] text-black">
-                    First name
-                  </label>
-                  <input
-                    type="text"
-                    className="w-68 h-10 px-3 border border-[#666666] rounded-lg outline-none"
-                  />
-                </div>
+          <div className="max-w-[560px] w-full flex flex-col gap-12">
+  {/* ================= FORM FIELDS ================= */}
+  <div className="flex flex-col gap-6">
 
-                {/* Last name */}
-                <div className="w-68 h-16.75 flex flex-col gap-1.5">
-                  <label className="font-switzer font-normal text-[16px] leading-[100%] text-black">
-                    Last name
-                  </label>
-                  <input
-                    type="text"
-                    className="w-68 h-10 px-3 border border-[#666666] rounded-lg outline-none"
-                  />
-                </div>
-              </div>
-            </div>
+    {/* NAME ROW */}
+    <div className="flex flex-col sm:flex-row gap-4">
+      {/* First Name */}
+      <div className="flex flex-col gap-[6px] w-full">
+        <label className="font-switzer text-[16px] leading-[21px] text-black">
+          First name
+        </label>
+        <input
+          type="text"
+          className="h-[40px] px-3 border border-[#666666] rounded-lg outline-none"
+        />
+      </div>
 
-            {/* Phone */}
-            {/* PHONE NUMBER ROW */}
-            <div className="w-140 h-16.75 flex flex-col gap-1.5">
-              <label className="w-140 h-5.25 font-switzer font-normal text-[16px] leading-[100%] text-black">
-                Phone Number
-              </label>
+      {/* Last Name */}
+      <div className="flex flex-col gap-[6px] w-full">
+        <label className="font-switzer text-[16px] leading-[21px] text-black">
+          Last name
+        </label>
+        <input
+          type="text"
+          className="h-[40px] px-3 border border-[#666666] rounded-lg outline-none"
+        />
+      </div>
+    </div>
 
-              <input
-                type="tel"
-                name="phoneNumber"
-                value={formData.phoneNumber}
-                onChange={handleChange}
-                className="w-140 h-10 px-3 border border-[#666666] rounded-lg bg-white outline-none"
-              />
-            </div>
+    {/* PHONE NUMBER */}
+    <div className="flex flex-col gap-[6px]">
+      <label className="font-switzer text-[16px] leading-[21px] text-black">
+        Phone Number
+      </label>
+      <input
+        type="tel"
+        name="phoneNumber"
+        value={formData.phoneNumber}
+        onChange={handleChange}
+        className="h-[40px] px-3 border border-[#666666] rounded-lg outline-none"
+      />
+    </div>
 
-            {/* Message */}
-            {/* MESSAGE ROW */}
-            <div className="w-140 h-37.5 flex flex-col gap-1.5">
-              <label className="w-140 h-5.25 font-switzer font-normal text-[16px] leading-[100%] text-black">
-                How can we help you?
-              </label>
+    {/* MESSAGE */}
+    <div className="flex flex-col gap-[6px]">
+      <label className="font-switzer text-[16px] leading-[21px] text-black">
+        How can we help you?
+      </label>
+      <textarea
+        name="message"
+        value={formData.message}
+        onChange={handleChange}
+        className="h-[123px] px-3 py-2.5 border border-[#666666] rounded-lg resize-none outline-none"
+      />
+    </div>
+  </div>
 
-              <textarea
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                className=" w-140 h-30.75 px-3 py-2.5 border border-[#666666] rounded-lg bg-white resize-none outline-none"
-              />
-            </div>
+  {/* ================= CHECKBOX + BUTTON ================= */}
+  <div className="flex flex-col gap-6">
 
-            {/* Checkbox */}
-            {/* CHECKBOX + BUTTON CONTAINER */}
-            <div className="w-140 h-23.5 flex flex-col gap-6">
-              {/* CHECKBOX ROW */}
-              <div className="w-140 h-5.5 flex items-center gap-2">
-                <input
-                  type="checkbox"
-                  name="agreeTerms"
-                  checked={formData.agreeTerms}
-                  onChange={handleChange}
-                  className=" w-5.5 h-5.5 rounded-xs border border-black bg-white
+    {/* CHECKBOX */}
+    <div className="flex items-center gap-2">
+      <input
+        type="checkbox"
+        name="agreeTerms"
+        checked={formData.agreeTerms}
+        onChange={handleChange}
+        className="w-[22px] h-[22px] border border-black rounded-[2px]"
+      />
+
+      <p className="font-switzer text-[16px] leading-[21px] text-black">
+        I agree with{" "}
+        <span className="underline cursor-pointer">
+          Terms and Conditions
+        </span>
+      </p>
+    </div>
+
+    {/* BUTTON */}
+    <button
+      onClick={handleSubmit}
+      className="
+        h-[48px]
+        w-full
+        bg-[#186AFF]
+        rounded-md
+        flex
+        items-center
+        justify-center
+        font-switzer
+        font-medium
+        text-[18px]
+        leading-[24px]
+        text-white
       "
-                />
+    >
+      Send your Request
+    </button>
+  </div>
+</div>
 
-                <p className=" w-61 h-5.25 font-switzer font-normal text-[16px] leading-[100%] text-black ">
-                  I agree with{" "}
-                  <span className="underline cursor-pointer">
-                    Terms and Conditions
-                  </span>
-                </p>
-              </div>
-
-              {/* SUBMIT BUTTON */}
-              <button
-                onClick={handleSubmit}
-                className=" w-140 h-12 px-6 py-3 flex items-center justify-center gap-2.5 rounded-md bg-[#186AFF] font-switzer font-medium text-[18px] leading-[100%] text-white"
-              >
-                Send your Request
-              </button>
-            </div>
-          </div>
 
           {/* ================= INFO ================= */}
           {/* ================= INFO ================= */}
@@ -192,18 +201,7 @@ export default function ContactUsPage() {
                     className=" w-140 h-5.25 flex items-center gap-3"
                   >
                     {/* ICON */}
-                    <span
-                      className="
-          w-5
-          h-5
-          rounded-2xl
-          border
-          border-black
-          bg-white
-          flex
-          items-center
-          justify-center
-        "
+                    <span className=" w-5 h-5 rounded-2xl border border-black bg-white flex items-center justify-center "
                     >
                       <CheckCircle className="w-3.5 h-3.5" />
                     </span>
@@ -211,8 +209,7 @@ export default function ContactUsPage() {
                     {/* TEXT */}
                     <p
                       className={`
-          ${item.width} h-5.25 font-switzer font-normal text-[16px] leading-[100%] text-black
-        `}
+          ${item.width} h-5.25 font-switzer font-normal text-[16px] leading-[100%] text-black `}
                     >
                       {item.text}
                     </p>

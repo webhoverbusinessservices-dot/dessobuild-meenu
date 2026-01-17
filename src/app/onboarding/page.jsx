@@ -16,37 +16,16 @@ export default function OnboardingPage() {
 
       {/* ================= HEADER ================= */}
 <header
-  className="
-    w-full
-    h-[74px]
-    bg-white
-    border-b-2 border-black/25
-    flex items-center
-    px-4 lg:px-[60px]
-  "
->
+  className=" w-full h-[74px] bg-white border-b-2 border-black/25 flex items-center px-4 lg:px-[60px]">
   <div className="w-full max-w-[1440px] mx-auto flex items-center justify-between">
     
     {/* Logo */}
-    <div className="
-      font-switzer
-      font-semibold
-      text-[24px] lg:text-[32px]
-      leading-[42px]
-      text-black
-    ">
+    <div className=" font-switzer font-semibold text-[24px] lg:text-[32px] leading-[42px] text-black">
       DessoBuild
     </div>
 
     {/* User */}
-    <div className="
-      font-switzer
-      font-normal
-      text-[16px] lg:text-[18px]
-      leading-[24px]
-      text-black/70
-      flex items-center
-    ">
+    <div className=" font-switzer font-normal text-[16px] lg:text-[18px] leading-[24px] text-black/70 flex items-center">
       Join as nick@gmail.com
     </div>
 

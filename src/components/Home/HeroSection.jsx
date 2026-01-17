@@ -37,8 +37,7 @@ export const HeroSection = () => {
 
         {/* Service Cards */}
         {/* Service Cards */}
-        <div
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-300 mx-auto mt-16"
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-300 mx-auto mt-16"
         >
           {/* CARD 1 */}
           <div className="w-full max-w-97.25 h-97.25 rounded-xl overflow-hidden bg-[#D6E1F5] mx-auto">

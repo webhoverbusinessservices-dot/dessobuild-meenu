@@ -8,15 +8,17 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link
           href="https://api.fontshare.com/v2/css?f[]=switzer@100,200,300,400,500,600,700,800&display=swap"
           rel="stylesheet"
         />
       </head>
-
-      <body className="font-sans antialiased"> {children} </body>
+      <body className="font-sans antialiased" suppressHydrationWarning>
+        {children}
+      </body>
     </html>
   );
 }
+
